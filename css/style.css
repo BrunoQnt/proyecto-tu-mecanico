@@ -102,7 +102,6 @@ header .btn:hover{
     background-color: grey;
     margin: 2%;
     padding: 2%;
-    height: 300 px;
     background-image: url(../img/autorepairworkshop_cover.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -252,6 +251,5 @@ footer div {
         object-fit: cover;
         margin-top: 10px;
     }
-
 }
 

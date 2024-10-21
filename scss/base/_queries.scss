@@ -1,0 +1,30 @@
+@media screen and (max-width: 650px){
+    header{
+        ul{
+            padding: 0px;
+        }
+        img{
+            width: 35px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 850px){
+#body{
+    ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.2fr 0.2fr;
+    }
+}
+.hero{
+    .carousel-item{
+        img{
+            height: 250px;
+            object-fit: cover;
+            margin-top: 10px;
+        }
+    }
+}
+}

@@ -1,0 +1,32 @@
+header {
+    background-color: $color-primcipal;
+    color: $color-secundario;
+    text-decoration: none;
+    overflow: hidden;
+    position: sticky;
+    top:  0px;
+    left: 0px;
+    right: 0px;
+    border-radius: 5px;
+    border: 1px solid black;
+    z-index: 1;
+
+    img {
+        margin-right: 15px;
+        object-fit: cover;
+    }
+}
+
+.form-control:enabled{
+    border-color:$color-secundario !important;
+}
+
+.btn {
+    color: $color-secundario !important;
+    border-color: $color-secundario !important;
+    &:hover{
+        background-color: $color-secundario !important;
+        border-color: $color-terciario !important;
+        color: $color-primcipal !important;
+    }
+}
