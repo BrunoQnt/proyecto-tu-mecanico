@@ -26,13 +26,13 @@
         background-color: rgba(255, 255, 255, 0.5) ;
         display: inline;
         grid-area: h1;
-        font-size: 23px;
+        font-size: nth($font-size, 3);
     }
     h2{
         color: $color-terciario;
         background-color: rgba(0, 0, 0, 0.5);
         grid-area: h2;
-        font-size: 20px;
+        font-size: nth($font-size, 2);
         width: 320px;
         height: 30px;
     }
@@ -40,6 +40,7 @@
         color: $color-terciario;
         background-color: rgba(0, 0, 0, 0.5);
         grid-area: p;
+        font-size: nth($font-size, 1);
     }
     iframe{
         width: 100%;
@@ -55,8 +56,8 @@
 }
 
 #body{
-    border: 1px solid black;
-    background-color: grey;
+    border: 1px solid nth($colores, 3);
+    background-color: $color-primcipal;
     margin: 2%;
     padding: 2%;
     background-image: url(../img/autorepairworkshop_cover.png);
@@ -69,7 +70,7 @@
     h1{
     background-color: rgba(255, 255, 255, 0.5);
     display: inline;
-    font-size: 23px;
+    font-size: nth($font-size, 3);
     }
     
     ul{
@@ -102,14 +103,14 @@
             h3{
                 background-color: rgba(255, 255, 255, 0.5);
                 margin: 0px;
-                font-size: 20px;
+                font-size: nth($font-size, 2);
             }
         }
     }
 }
 
 .body{
-    margin: 20px;
+    padding: 10px;
     .card{
         -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.3);
         -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.3);
@@ -123,6 +124,84 @@
         img{
             height: 250px;
             object-fit: contain;
+        }
+    }
+}
+
+.formulario{
+    @extend %borde;
+    margin: 20px;
+    background-image: url(../../img/autoroto.jpg);
+    @extend %imagen-fondo;
+    padding: 10px;
+
+    h2{
+        font-size: nth($font-size, 3);
+        background-color: rgba(255, 255, 255, 0.5);
+        @extend %borde;
+    }
+    .form-label{
+        background-color: rgba(255, 255, 255, 0.5);
+        @extend %borde;
+    }
+    .form-text{
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        width: 250px;
+    }
+    div{
+        .btn{
+            margin: 10px;
+        }
+    }
+}
+
+.nosotros{
+    background-color: $color-primcipal;
+}
+
+.check-list{
+    margin: 20px;
+    background-image: url(../../img/listaauto.jpg);
+    @extend %imagen-fondo;
+    color: $color-terciario;
+    @extend %borde;
+    padding: 10px;
+
+    h6{
+        font-size: nth($font-size, 2);
+    }
+    .list-group{
+        margin: 10px;
+        .list-group-item{
+            margin: 5px;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: $color-terciario;
+        }
+    }
+}
+
+.seguros{
+    margin: 20px;
+    background-image: url(../../img/autoseguros.jpg);
+    color: white;
+    @extend %imagen-fondo;
+    @extend %borde;
+    padding: 10px;
+
+    h4{
+        font-size: nth($font-size, 3);
+
+    }
+    h6{
+        font-size: nth($font-size, 2);
+    }
+    .row{
+        div{
+            .btn{
+                margin: 10px;
+                background-color: rgba(255, 255, 255, 0.5);
+            }
         }
     }
 }

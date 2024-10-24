@@ -4,3 +4,41 @@
 $color-primcipal: dimgray;
 $color-secundario: black;
 $color-terciario: white;
+
+// listas
+$colores: red, yellow, black, blue, gray;
+$font-size: 16px, 20px, 23px, 25px,;
+
+// Operaciones
+$ancho: 720px;
+
+// img{
+//     width: $ancho /2 + 4;
+// }
+
+// Mapas
+$borde:(
+    borde-color: black,
+    borde-radio: 5px,
+);
+
+%borde{
+    border-color: black;
+    border-radius: 5px;
+}
+
+%imagen-fondo{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+// Mixin
+@mixin flex($felx, $justify, $aling){
+    display: $felx;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+// Condicionales

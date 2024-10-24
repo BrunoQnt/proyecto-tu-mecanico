@@ -8,9 +8,9 @@ header {
     left: 0px;
     right: 0px;
     border-radius: 5px;
-    border: 1px solid black;
+    border: 1px solid nth($colores, 3);
     z-index: 1;
-
+    font-size: nth($font-size, 1);
     img {
         margin-right: 15px;
         object-fit: cover;
