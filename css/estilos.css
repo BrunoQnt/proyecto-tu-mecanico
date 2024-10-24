@@ -145,7 +145,7 @@ header {
 
 .formulario {
   margin: 20px;
-  background-image: url(../../img/autoroto.jpg);
+  background-image: url(../img/autoroto.jpg);
   padding: 10px; }
   .formulario h2 {
     font-size: 23px;
@@ -164,7 +164,7 @@ header {
 
 .check-list {
   margin: 20px;
-  background-image: url(../../img/listaauto.jpg);
+  background-image: url(../img/listaauto.jpg);
   color: white;
   padding: 10px; }
   .check-list h6 {
@@ -178,7 +178,7 @@ header {
 
 .seguros {
   margin: 20px;
-  background-image: url(../../img/autoseguros.jpg);
+  background-image: url(/../img/autoseguros.jpg);
   color: white;
   padding: 10px; }
   .seguros h4 {

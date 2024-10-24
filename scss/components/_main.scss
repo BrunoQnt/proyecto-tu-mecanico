@@ -131,7 +131,7 @@
 .formulario{
     @extend %borde;
     margin: 20px;
-    background-image: url(../../img/autoroto.jpg);
+    background-image: url(../img/autoroto.jpg);
     @extend %imagen-fondo;
     padding: 10px;
 
@@ -162,7 +162,7 @@
 
 .check-list{
     margin: 20px;
-    background-image: url(../../img/listaauto.jpg);
+    background-image: url(../img/listaauto.jpg);
     @extend %imagen-fondo;
     color: $color-terciario;
     @extend %borde;
@@ -183,7 +183,7 @@
 
 .seguros{
     margin: 20px;
-    background-image: url(../../img/autoseguros.jpg);
+    background-image: url(/../img/autoseguros.jpg);
     color: white;
     @extend %imagen-fondo;
     @extend %borde;
