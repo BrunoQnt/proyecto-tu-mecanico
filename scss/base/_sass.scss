@@ -1,7 +1,7 @@
 // /*! Funcionalidades */
 
 // /*! VARIABLES */
-$color-primcipal: dimgray;
+$color-primcipal: rgb(170, 170, 170);
 $color-secundario: black;
 $color-terciario: white;
 
@@ -9,21 +9,15 @@ $color-terciario: white;
 $colores: red, yellow, black, blue, gray;
 $font-size: 16px, 20px, 23px, 25px,;
 
-// Operaciones
-$ancho: 720px;
-
-// img{
-//     width: $ancho /2 + 4;
-// }
-
 // Mapas
 $borde:(
+    border: 1px solid,
     borde-color: black,
     borde-radio: 5px,
 );
 
 %borde{
-    border-color: black;
+    border: 1px solid black;
     border-radius: 5px;
 }
 

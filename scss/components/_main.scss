@@ -1,3 +1,8 @@
+body{
+    background: rgb(255,255,255);
+background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%);
+}
+
 #hero {
     color: $color-secundario;
     background-image: url(../img/empresa-de-detergentes1-940x470.png);
@@ -18,11 +23,10 @@
     "p p"
     "iframe iframe";
     column-gap: 10px;
-    border: 1px solid $color-secundario;
+    @extend %borde;
     
     h1{
         height: 30px;
-        width: 270px;
         background-color: rgba(255, 255, 255, 0.5) ;
         display: inline;
         grid-area: h1;
@@ -33,7 +37,6 @@
         background-color: rgba(0, 0, 0, 0.5);
         grid-area: h2;
         font-size: nth($font-size, 2);
-        width: 320px;
         height: 30px;
     }
     p{
@@ -56,7 +59,7 @@
 }
 
 #body{
-    border: 1px solid nth($colores, 3);
+    @extend %borde;
     background-color: $color-primcipal;
     margin: 2%;
     padding: 2%;
@@ -157,7 +160,18 @@
 }
 
 .nosotros{
-    background-color: $color-primcipal;
+    padding: 20px;
+
+    .accordion{
+        .accordion-body{
+            ul{
+                list-style: none;
+                li{
+                    margin: 2px;
+                }
+            }
+        }
+    }
 }
 
 .check-list{
@@ -186,8 +200,8 @@
     background-image: url(../img/autoseguros.jpg);
     color: white;
     @extend %imagen-fondo;
-    @extend %borde;
     padding: 10px;
+    @extend %borde;
 
     h4{
         font-size: nth($font-size, 3);
