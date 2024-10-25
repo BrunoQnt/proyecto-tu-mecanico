@@ -229,9 +229,9 @@ footer {
     width: 45px;
     object-fit: scale-down; }
   footer div a img {
-    width: 15px; }
+    width: 8px; }
   footer div p {
-    font-size: 15px; } }
+    font-size: 8px; } }
 
 @media screen and (max-width: 850px) {
   #body ul {
