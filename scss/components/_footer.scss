@@ -12,6 +12,7 @@ footer{
     align-content: center;
     border-radius: 5px;
     border: 1px solid $color-secundario;
+    padding: 10px;
     div{
         padding: 20px;
         font-size: nth($font-size, 1);
@@ -24,12 +25,18 @@ footer{
         }
     }
     .nosotros{
-        display: flex;
+        display: grid;
         flex-direction: column;
         align-items: flex-start;
+        
         a{
             text-decoration: none;
             color: $color-secundario;
+            margin: 4px;
+            &:hover{
+                border: 1px solid black;
+                border-radius: 5px;
+            }
         }
     }
 }

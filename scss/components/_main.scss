@@ -27,6 +27,7 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
     
     h1{
         height: 30px;
+        width: 280px;
         background-color: rgba(255, 255, 255, 0.5) ;
         display: inline;
         grid-area: h1;
@@ -38,6 +39,7 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
         grid-area: h2;
         font-size: nth($font-size, 2);
         height: 30px;
+        width: 340px;
     }
     p{
         color: $color-terciario;
@@ -50,6 +52,7 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
         height: 100%;
         grid-area: iframe;
         border-radius: 5px;
+        animation: 2s ease 1s;
     }
 }
 .carousel-item img {
@@ -101,6 +104,11 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
                     margin: 2px;
                     background-color:$color-primcipal;
                     border-radius: 15px;
+                    transition-property: width;
+                    transition-duration: 0.2s;
+                    &:hover{
+                        width: 120px;
+                    }
                 }
             }
             h3{
@@ -119,16 +127,21 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
         -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.3);
         box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.3);
         border-color: rgba(0, 0, 0, 0.3);
+        transition: 1s;
+        padding: 5px;
         &:hover{
             -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.5);
-        -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.5);
-        box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.5);
+            -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.5);
+            box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.5);
+            transform: scale(1.03);
         }
         img{
             height: 250px;
             object-fit: contain;
+            margin: 2px
         }
     }
+    
 }
 
 .formulario{
@@ -136,7 +149,7 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
     margin: 20px;
     background-image: url(../img/autoroto.jpg);
     @extend %imagen-fondo;
-    padding: 10px;
+    padding: 20px;
 
     h2{
         font-size: nth($font-size, 3);
@@ -161,9 +174,18 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
 
 .nosotros{
     padding: 20px;
-
     .accordion{
+        @extend %borde;
+        }
+        .accordion-header{
+            .accordion-button{
+                background-color: $color-primcipal;
+            }
+            
+        }
         .accordion-body{
+            color: $color-secundario;
+            background: rgba(0,0,0,0.5);
             ul{
                 list-style: none;
                 li{
@@ -171,8 +193,9 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
                 }
             }
         }
+        
     }
-}
+
 
 .check-list{
     margin: 20px;
@@ -180,7 +203,7 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
     @extend %imagen-fondo;
     color: $color-terciario;
     @extend %borde;
-    padding: 10px;
+    padding: 20px;
 
     h6{
         font-size: nth($font-size, 2);
@@ -200,7 +223,7 @@ background: linear-gradient(175deg, rgba(255,255,255,1) 29%, rgba(0,0,0,1) 100%)
     background-image: url(../img/autoseguros.jpg);
     color: white;
     @extend %imagen-fondo;
-    padding: 10px;
+    padding: 20px;
     @extend %borde;
 
     h4{
